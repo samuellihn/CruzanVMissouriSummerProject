@@ -1,0 +1,65 @@
+.topnav {
+  background-color: rgba(118, 97, 83, 0.7);
+  overflow: hidden;
+  margin: 8px;
+  border-radius: 6px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 16px);
+}
+.topnav > a.title {
+  float: left;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-size: 100% 0.1em, 0 0.1em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+  font-weight: 600;
+  margin: 0;
+}
+.topnav > a.navlink {
+  float: right;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-size: 100% 0.1em, 0 0.1em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+.topnav > a:hover {
+  background-size: 0 0.1em, 100% 0.1em;
+  text-decoration-color: #eff1edff;
+}
+
+.button-group {
+  background-color: #766153ff;
+  display: inline-flex;
+  align-items: flex-start;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+.button-group > a {
+  font-family: "Mukta", sans-serif;
+  float: left;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-size: 100% 0.1em, 0 0.1em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+.button-group > a:hover {
+  background-size: 0 0.1em, 100% 0.1em;
+  text-decoration-color: #eff1edff;
+}
+
+/*# sourceMappingURL=navigation.css.map */

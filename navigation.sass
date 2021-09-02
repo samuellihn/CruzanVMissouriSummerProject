@@ -1,0 +1,66 @@
+
+@use "shared.sass" as s
+
+
+.topnav
+  background-color: transparentize(s.$umber, 0.3)
+  overflow: hidden
+  margin: 8px
+  border-radius: 6px
+  position: fixed
+  top: 0
+  width: calc(100% - 16px)
+
+
+  @mixin nav-element
+    @include s.sans-serif
+
+    color: s.$cultured
+    padding: 8px 16px
+    font-size: 20px
+    background-size: 100% 0.1em, 0 0.1em
+    font-weight: 400
+    text-align: center
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0)
+    transition: text-decoration-color 300ms
+
+  > a.title
+    float: left
+    @include nav-element
+    font-weight: 600
+    margin: 0
+
+  > a.navlink
+    float: right
+    @include nav-element
+
+  > a:hover
+    background-size: 0 0.1em, 100% 0.1em
+    text-decoration-color: s.$cultured
+
+.button-group
+  background-color: s.$umber
+  display: inline-flex
+  align-items: flex-start
+  margin: 20px auto
+  border-radius: 6px
+
+  @mixin nav-element
+    @include s.sans-serif
+
+    float: left
+    color: s.$cultured
+    padding: 8px 16px
+    font-size: 20px
+
+  > a
+    @include nav-element
+    background-size: 100% 0.1em, 0 0.1em
+    font-weight: 400
+    text-align: center
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0)
+    transition: text-decoration-color 300ms
+
+  > a:hover
+    background-size: 0 0.1em, 100% 0.1em
+    text-decoration-color: s.$cultured

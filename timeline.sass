@@ -1,0 +1,53 @@
+
+@use "shared.sass" as s
+
+.timeline
+  margin: 0 auto
+
+  padding: 4px
+  list-style-type: none
+  & .card
+    background-color: s.$spanish-bistre
+    border-radius: 6px
+    margin: 16px 0
+
+    @include s.sans-serif
+
+    color: s.$cultured
+    padding: 8px 16px
+    font-size: 20px
+
+    font-weight: 400
+    text-align: left
+
+
+  > .collapsible
+    text-decoration: underline
+    cursor: pointer
+    user-select: none
+
+  > .expanded
+    text-decoration: underline
+    cursor: pointer
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    margin: 16px 0 0 0
+
+  >.collapse-content
+    background-color: s.$umber
+    border-bottom-left-radius: 6px
+    border-bottom-right-radius: 6px
+    display: none
+
+    @include s.sans-serif
+
+    color: s.$cultured
+    padding: 8px 16px
+    font-size: 20px
+
+    font-weight: 400
+    text-align: left
+    > p
+      line-height: 1.2em
+      margin: 8px 0
+      font-weight: 300

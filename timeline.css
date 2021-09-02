@@ -1,0 +1,47 @@
+.timeline {
+  margin: 0 auto;
+  padding: 4px;
+  list-style-type: none;
+}
+.timeline .card {
+  background-color: #717744ff;
+  border-radius: 6px;
+  margin: 16px 0;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.timeline > .collapsible {
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+.timeline > .expanded {
+  text-decoration: underline;
+  cursor: pointer;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 16px 0 0 0;
+}
+.timeline > .collapse-content {
+  background-color: #766153ff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: none;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.timeline > .collapse-content > p {
+  line-height: 1.2em;
+  margin: 8px 0;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=timeline.css.map */

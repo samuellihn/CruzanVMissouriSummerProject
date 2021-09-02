@@ -1,0 +1,242 @@
+.timeline {
+  margin: 0 auto;
+  padding: 4px;
+  list-style-type: none;
+}
+.timeline .card {
+  background-color: #717744ff;
+  border-radius: 6px;
+  margin: 16px 0;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.timeline > .collapsible {
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+.timeline > .expanded {
+  text-decoration: underline;
+  cursor: pointer;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 16px 0 0 0;
+}
+.timeline > .collapse-content {
+  background-color: #766153ff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: none;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.timeline > .collapse-content > p {
+  line-height: 1.2em;
+  margin: 8px 0;
+  font-weight: 300;
+}
+
+.topnav {
+  background-color: rgba(118, 97, 83, 0.7);
+  overflow: hidden;
+  margin: 8px;
+  border-radius: 6px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 16px);
+}
+.topnav > a.title {
+  float: left;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-size: 100% 0.1em, 0 0.1em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+  font-weight: 600;
+  margin: 0;
+}
+.topnav > a.navlink {
+  float: right;
+  font-family: "Mukta", sans-serif;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-size: 100% 0.1em, 0 0.1em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+.topnav > a:hover {
+  background-size: 0 0.1em, 100% 0.1em;
+  text-decoration-color: #eff1edff;
+}
+
+.button-group {
+  background-color: #766153ff;
+  display: inline-flex;
+  align-items: flex-start;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+.button-group > a {
+  font-family: "Mukta", sans-serif;
+  float: left;
+  color: #eff1edff;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-size: 100% 0.1em, 0 0.1em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+.button-group > a:hover {
+  background-size: 0 0.1em, 100% 0.1em;
+  text-decoration-color: #eff1edff;
+}
+
+body {
+  margin: 0;
+  background-color: #bcbd8bff;
+  overflow: overlay;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fullscreen-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.header {
+  font-family: "Merriweather", serif;
+  margin: 10px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+.section {
+  width: 70%;
+  margin: 60px auto;
+  text-align: center;
+  color: #373d20ff;
+}
+.section p {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+  margin: 12px 0;
+}
+.section p.quote {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin: 18px;
+}
+.section p.quote :before {
+  content: "<div class='bigquote'>";
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background-color: #766153ff;
+}
+
+.title-screen {
+  width: 70%;
+  margin: 0 auto;
+  color: #373d20ff;
+  text-align: center;
+}
+.title-screen > h1 {
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  margin: 10px;
+}
+.title-screen > h2 {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  margin: 10px;
+  font-weight: 400;
+  text-decoration: underline 0.07em;
+}
+.title-screen > h4 {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+.title-screen > h3 {
+  font-family: "Mukta", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  margin-block: 0;
+}
+
+#top-of-site-pixel-anchor {
+  height: 3px;
+}
+
+.anchor {
+  width: 100%;
+  height: 1px;
+}
+
+.spacer-30 {
+  width: 100%;
+  height: 20px;
+}
+
+/*# sourceMappingURL=site.css.map */

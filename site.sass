@@ -1,0 +1,128 @@
+$cultured: #eff1edff
+$kombu-green: #373d20ff
+$spanish-bistre: #717744ff
+$sage: #bcbd8bff
+$umber: #766153ff
+
+@use "timeline.sass"
+@use "navigation.sass"
+@use "shared.sass" as s
+
+body
+  margin: 0
+  background-color: $sage
+  overflow: overlay
+
+html
+  scroll-behavior: smooth
+
+
+
+.fullscreen-content
+  width: 100vw
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0
+
+
+.light
+  font-weight: 300
+
+.header
+  @include s.serif
+  margin: 10px
+  font-weight: 700
+
+h1
+  font-size: 54px
+
+h2
+  font-size: 36px
+
+h3
+  font-size: 30px
+h4
+  font-size: 26px
+
+.section
+  width: 70%
+  margin: 60px auto
+  text-align: center
+  color: $kombu-green
+  & p
+    @include s.sans-serif
+    font-size: 20px
+    line-height: 1.2em
+    margin: 12px 0
+
+  & p.quote
+    @include s.serif
+    font-style: italic
+    font-size: 24px
+    line-height: 1.2em
+    margin: 18px
+    & :before
+      content: "<div class='bigquote'>"
+
+.underline
+  text-decoration: underline
+
+::-webkit-scrollbar
+  width: 10px
+  height: 10px
+
+
+::-webkit-scrollbar-track
+  background-color: #00000000
+
+::-webkit-scrollbar-thumb
+  width: 6px
+  border-radius: 6px
+  background-color: $umber
+
+.title-screen
+  width: 70%
+  margin: 0 auto
+  color: $kombu-green
+
+  text-align: center
+
+  > h1
+    @include s.serif
+    font-size: 60px
+    margin: 10px
+
+  > h2
+    @include s.serif
+    font-size: 36px
+    margin: 10px
+    font-weight: 400
+    text-decoration: underline 0.07em
+
+  > h4
+    @include s.sans-serif
+    font-size: 20px
+    margin: 10px
+
+  > h3
+    @include s.sans-serif
+    font-size: 24px
+    margin: 0
+    margin-block: 0
+
+#top-of-site-pixel-anchor
+  height: 3px
+
+.anchor
+  width: 100%
+  height: 1px
+
+.spacer-30
+  width: 100%
+  height: 20px
+
+
+
+
