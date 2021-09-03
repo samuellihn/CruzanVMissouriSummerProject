@@ -11,12 +11,10 @@ $umber: #766153ff
 body
   margin: 0
   background-color: $sage
-  overflow: overlay
+  overflow-x: hidden
 
 html
   scroll-behavior: smooth
-
-
 
 .fullscreen-content
   width: 100vw
@@ -38,11 +36,15 @@ html
 h1
   font-size: 54px
 
+.large
+  font-size: 72px
+
 h2
   font-size: 36px
 
 h3
   font-size: 30px
+
 h4
   font-size: 26px
 
@@ -51,6 +53,7 @@ h4
   margin: 60px auto
   text-align: center
   color: $kombu-green
+
   & p
     @include s.sans-serif
     font-size: 20px
@@ -63,8 +66,6 @@ h4
     font-size: 24px
     line-height: 1.2em
     margin: 18px
-    & :before
-      content: "<div class='bigquote'>"
 
 .underline
   text-decoration: underline
@@ -124,5 +125,34 @@ h4
   height: 20px
 
 
+.picture
+  max-width: 90%
+  height: auto
+  margin: 20px 0
+  border-radius: 8px
 
+.judge-view
+  display: flex
+  margin: 32px auto
+  justify-content: center
+  flex-wrap: wrap
+  @include s.sans-serif
+  > .didnt
+    > img
+      opacity: 0.6
 
+  > .judge
+    vertical-align: top
+    text-align: center
+    width: 120px
+    &:not(.didnt)
+      font-weight: 900
+      text-decoration: underline
+
+    > span
+      margin: 4px 0
+      font-size: 20px
+
+    > img
+      width: 100%
+      height: auto

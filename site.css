@@ -111,7 +111,7 @@
 body {
   margin: 0;
   background-color: #bcbd8bff;
-  overflow: overlay;
+  overflow-x: hidden;
 }
 
 html {
@@ -139,6 +139,10 @@ html {
 
 h1 {
   font-size: 54px;
+}
+
+.large {
+  font-size: 72px;
 }
 
 h2 {
@@ -171,9 +175,6 @@ h4 {
   font-size: 24px;
   line-height: 1.2em;
   margin: 18px;
-}
-.section p.quote :before {
-  content: "<div class='bigquote'>";
 }
 
 .underline {
@@ -237,6 +238,41 @@ h4 {
 .spacer-30 {
   width: 100%;
   height: 20px;
+}
+
+.picture {
+  max-width: 90%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.judge-view {
+  display: flex;
+  margin: 32px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Mukta", sans-serif;
+}
+.judge-view > .didnt > img {
+  opacity: 0.6;
+}
+.judge-view > .judge {
+  vertical-align: top;
+  text-align: center;
+  width: 120px;
+}
+.judge-view > .judge:not(.didnt) {
+  font-weight: 900;
+  text-decoration: underline;
+}
+.judge-view > .judge > span {
+  margin: 4px 0;
+  font-size: 20px;
+}
+.judge-view > .judge > img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=site.css.map */
