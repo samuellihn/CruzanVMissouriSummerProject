@@ -246,6 +246,9 @@ h4 {
   margin: 20px 0;
   border-radius: 8px;
 }
+.picture-half {
+  max-width: 30%;
+}
 
 .judge-view {
   display: flex;
@@ -273,6 +276,17 @@ h4 {
 .judge-view > .judge > img {
   width: 100%;
   height: auto;
+}
+
+.hanging-indent {
+  text-align: left;
+}
+.hanging-indent p {
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.hanging-indent a {
+  color: #766153ff;
 }
 
 /*# sourceMappingURL=site.css.map */
